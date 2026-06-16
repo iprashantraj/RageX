@@ -19,8 +19,77 @@
   }
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #ff4655;
+  color: #fff;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Glitch */
+@keyframes glitch-1 {
+  0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+  20% { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 1px); }
+  40% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); }
+  60% { clip-path: inset(30% 0 40% 0); transform: translate(-1px, 2px); }
+  80% { clip-path: inset(80% 0 5% 0); transform: translate(1px, -2px); }
+}
+@keyframes glitch-2 {
+  0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+  20% { clip-path: inset(50% 0 20% 0); transform: translate(2px, -1px); }
+  40% { clip-path: inset(10% 0 70% 0); transform: translate(-2px, 1px); }
+  60% { clip-path: inset(70% 0 10% 0); transform: translate(1px, -2px); }
+  80% { clip-path: inset(20% 0 60% 0); transform: translate(-1px, 2px); }
+}
+.glitch-layer-1 { animation: glitch-1 4s infinite steps(1); }
+.glitch-layer-2 { animation: glitch-2 4s infinite steps(1); }
+
+/* Scanlines */
+.scanlines::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 60;
+  mix-blend-mode: overlay;
+}
+
+/* Section divider animated line */
+@keyframes sweep {
+  from { transform: scaleX(0); transform-origin: left; }
+  to { transform: scaleX(1); transform-origin: left; }
+}
+.animate-sweep { animation: sweep 1.2s ease-out forwards; }
+
+/* Pulse glow */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.animate-pulse-glow { animation: pulseGlow 2.5s ease-in-out infinite; }
