@@ -9,7 +9,7 @@ import GrainOverlay from "@/components/GrainOverlay";
 import SectionDivider from "@/components/SectionDivider";
 
 const ticker = [
-  "RAGEX 2026",
+  "RageX 2026",
   "OFFLINE LAN",
   "VALORANT · 5v5 · 2v2",
   "TEKKEN · 1v1",

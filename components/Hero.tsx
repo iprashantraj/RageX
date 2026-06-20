@@ -1,6 +1,5 @@
 import { SITE } from "@/lib/site";
 import CTAButtons from "./CTAButtons";
-import GlitchTitle from "./GlitchTitle";
 
 export default function Hero() {
   return (
@@ -8,19 +7,24 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,70,85,0.25),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(124,58,237,0.25),transparent_50%)]" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.04]" />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[28vw] font-black tracking-tighter text-white/[0.03] select-none pointer-events-none leading-none">
-        RAGE
-      </div>
+      <img
+        src="/ragex-resized.png"
+        alt=""
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[1200px] opacity-[0.04] select-none pointer-events-none mix-blend-screen"
+      />
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center pt-20 pb-24">
         <p className="mb-4 sm:mb-6 text-[10px] sm:text-sm font-mono uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[#ff4655] animate-pulse">
           // Offline LAN Event
         </p>
-        <h1 className="text-5xl sm:text-8xl md:text-9xl font-black tracking-tighter text-white leading-[0.85]">
-          <GlitchTitle>
-            RAGE<span className="text-[#ff4655]">X</span>
-          </GlitchTitle>
-        </h1>
+        <div className="flex justify-center" style={{ isolation: "auto" }}>
+          <img
+            src="/ragex-resized.png"
+            alt="RageX"
+            className="w-[240px] sm:w-[360px] md:w-[460px] lg:w-[540px]"
+            style={{ mixBlendMode: "screen" }}
+          />
+        </div>
         <p className="mt-5 sm:mt-6 text-base sm:text-2xl text-white/70 font-light tracking-wide">
           {SITE.tagline}
         </p>
