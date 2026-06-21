@@ -1,8 +1,8 @@
 export const SITE = {
   name: "RageX",
-  tagline: "Offline. Unfiltered. Unforgiving.",
+  tagline: "For Gamers, By Gamers",
   description:
-    "An offline LAN showdown featuring Valorant and Tekken. Bring your squad, bring your rage.",
+    "RageX is a community-driven gaming platform hosting LAN events, online tournaments, and competitive gaming experiences. Join the current LAN showdown and stay tuned for future battles.",
   discordUrl: "https://discord.gg/your-invite",
   registerUrl: "https://forms.gle/your-form",
   date: "TBA",
