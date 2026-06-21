@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "For Gamers, By Gamers",
   description:
     "From LAN showdowns to online tournaments, RageX is where gamers compete, connect, and level up",
-  discordUrl: "https://discord.gg/your-invite",
+  instagramUrl: "https://www.instagram.com/rageee__x/",
   registerUrl: "https://forms.gle/your-form",
   date: "TBA",
   venue: "TBA",

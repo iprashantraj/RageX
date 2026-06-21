@@ -18,7 +18,7 @@ export default function JoinSection() {
           </h2>
           <p className="text-white/60 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 px-2">
             Slots are limited. Lock yours in and meet the rest of the roster on
-            Discord.
+            Instagram.
           </p>
         </Reveal>
         <Reveal delay={200}>
