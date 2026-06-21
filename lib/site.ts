@@ -23,6 +23,7 @@ export type Game = {
   accent: string;
   glow: string;
   modes: GameMode[];
+  image?: string;
 };
 
 export const GAMES: Game[] = [
@@ -51,6 +52,7 @@ export const GAMES: Game[] = [
     subtitle: "1v1 King of Iron Fist",
     accent: "from-[#7c3aed] to-[#facc15]",
     glow: "shadow-[0_0_80px_-10px_rgba(124,58,237,0.6)]",
+    image: "/tekken.jpeg",
     modes: [
       {
         name: "1v1 Duel",
