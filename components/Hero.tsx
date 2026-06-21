@@ -25,7 +25,7 @@ export default function Hero() {
             style={{ mixBlendMode: "screen" }}
           />
         </div>
-        <p className="mt-5 sm:mt-6 text-base sm:text-2xl text-white/70 font-light tracking-wide">
+        <p className="mt-5 sm:mt-6 text-lg sm:text-3xl text-white/90 font-medium tracking-wide">
           {SITE.tagline}
         </p>
         <p className="mt-3 sm:mt-4 max-w-xl mx-auto text-sm sm:text-base text-white/50 px-2">
