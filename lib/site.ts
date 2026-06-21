@@ -33,6 +33,7 @@ export const GAMES: Game[] = [
     subtitle: "Tactical 5v5 / 2v2",
     accent: "from-[#ff4655] to-[#bd3944]",
     glow: "shadow-[0_0_80px_-10px_rgba(255,70,85,0.6)]",
+    image: "/valorant.jpeg",
     modes: [
       {
         name: "5v5 Standard",
