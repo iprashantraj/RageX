@@ -24,6 +24,7 @@ export type Game = {
   glow: string;
   modes: GameMode[];
   image?: string;
+  hideTitle?: boolean;
 };
 
 export const GAMES: Game[] = [
@@ -33,7 +34,7 @@ export const GAMES: Game[] = [
     subtitle: "Tactical 5v5 / 2v2",
     accent: "from-[#ff4655] to-[#bd3944]",
     glow: "shadow-[0_0_80px_-10px_rgba(255,70,85,0.6)]",
-    image: "/valorant.jpeg",
+    image: "/valo.jpeg",
     modes: [
       {
         name: "5v5 Standard",
@@ -54,6 +55,7 @@ export const GAMES: Game[] = [
     accent: "from-[#7c3aed] to-[#facc15]",
     glow: "shadow-[0_0_80px_-10px_rgba(124,58,237,0.6)]",
     image: "/tekken.jpeg",
+    hideTitle: true,
     modes: [
       {
         name: "1v1 Duel",

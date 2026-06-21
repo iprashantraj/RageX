@@ -37,11 +37,13 @@ export default function GameCard({ game, index }: Props) {
             </div>
           </div>
         )}
-        <div className="absolute inset-0 flex items-end p-6 sm:p-10">
-          <h3 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white drop-shadow-2xl">
-            {game.title}
-          </h3>
-        </div>
+        {!game.hideTitle && (
+          <div className="absolute inset-0 flex items-end p-6 sm:p-10">
+            <h3 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white drop-shadow-2xl">
+              {game.title}
+            </h3>
+          </div>
+        )}
         <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-[10px] sm:text-xs font-mono uppercase tracking-widest text-white/80">
           0{index + 1} / GAME
         </div>
