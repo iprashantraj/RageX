@@ -2,7 +2,7 @@ export const SITE = {
   name: "RageX",
   tagline: "For Gamers, By Gamers",
   description:
-    "A community-driven gaming platform hosting LAN events, online tournaments, and competitive battles. Join the current LAN showdown and gear up for what's next.",
+    "From LAN showdowns to online tournaments, RageX is where gamers compete, connect, and level up",
   discordUrl: "https://discord.gg/your-invite",
   registerUrl: "https://forms.gle/your-form",
   date: "TBA",
