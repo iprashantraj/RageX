@@ -27,9 +27,19 @@ export default function EventInfo() {
                 <p className="text-[10px] sm:text-xs uppercase tracking-widest text-white/40 mb-2 sm:mb-4">
                   {item.label}
                 </p>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  {item.value}
-                </p>
+                {Array.isArray(item.value) ? (
+                  <div className="flex flex-col gap-1 sm:gap-2">
+                    {item.value.map((v, idx) => (
+                      <p key={idx} className="text-lg sm:text-xl font-bold text-white">
+                        {v}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                    {item.value}
+                  </p>
+                )}
               </div>
             </Reveal>
           ))}

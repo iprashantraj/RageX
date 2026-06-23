@@ -6,8 +6,12 @@ export const SITE = {
   instagramUrl: "https://www.instagram.com/rageee__x/",
   registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
   date: "TBA",
-  venue: "TBA",
-  prizePool: "TBA",
+  venue: "Hexa Gaming",
+  prizePool: [
+    "Valorant 5v5: Up to 5K",
+    "Valorant 2v2: Up to 3K",
+    "Tekken: Up to 3K"
+  ],
 };
 
 export type GameMode = {
