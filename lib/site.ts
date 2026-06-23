@@ -4,7 +4,7 @@ export const SITE = {
   description:
     "From LAN showdowns to online tournaments, RageX is where gamers compete, connect, and level up",
   instagramUrl: "https://www.instagram.com/rageee__x/",
-  registerUrl: "https://forms.gle/your-form",
+  registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
   date: "TBA",
   venue: "TBA",
   prizePool: "TBA",
