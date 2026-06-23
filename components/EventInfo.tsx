@@ -30,7 +30,7 @@ export default function EventInfo() {
                 {Array.isArray(item.value) ? (
                   <div className="flex flex-col gap-1 sm:gap-2">
                     {item.value.map((v, idx) => (
-                      <p key={idx} className="text-lg sm:text-xl font-bold text-white">
+                      <p key={idx} className="text-sm sm:text-base font-bold text-white leading-tight">
                         {v}
                       </p>
                     ))}

@@ -7,13 +7,18 @@ export const SITE = {
   registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
   date: "5th July 2026",
   venue: "Hexa Gaming",
-  prizePool: "Winner can win upto 5k followed by runner up",
+  prizePool: [
+    "5v5: Winner can win upto 5k followed by runner up",
+    "2v2: Winner can win upto 3k followed by runner up",
+    "Tekken: Winner can win upto 3k followed by runner up"
+  ],
 };
 
 export type GameMode = {
   name: string;
   format: string;
   blurb: string;
+  prize?: string;
 };
 
 export type Game = {
@@ -40,11 +45,13 @@ export const GAMES: Game[] = [
         name: "5v5 Standard",
         format: "Best of 3 · Single Elim",
         blurb: "Full team warfare. Plant, defuse, dominate.",
+        prize: "Winner can win upto 5k followed by runner up",
       },
       {
         name: "2v2 Showdown",
         format: "Best of 5 · Round Robin",
         blurb: "Two players. One map. Pure aim.",
+        prize: "Winner can win upto 3k followed by runner up",
       },
     ],
   },
@@ -61,6 +68,7 @@ export const GAMES: Game[] = [
         name: "1v1 Duel",
         format: "Best of 5 · Double Elim",
         blurb: "Frame by frame. No mercy. No excuses.",
+        prize: "Winner can win upto 3k followed by runner up",
       },
     ],
   },

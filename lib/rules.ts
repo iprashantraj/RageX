@@ -29,7 +29,9 @@ By registering, every player agrees and team coach to the rules below in full. T
 
 2.2 Entry fees are **non-refundable** once registration is confirmed, except in cases where the organizers cancel the event entirely.
 2.3 **Prize Pool:**
-Winner can win upto 5k followed by runner up
+- 5v5: Winner can win upto 5k followed by runner up
+- 2v2: Winner can win upto 3k followed by runner up
+- Tekken: Winner can win upto 3k followed by runner up
 
 2.4 Prize money will be transferred **same day** after the tournament concludes, Cash Prize will be provided by the admins.
 2.5 Taxes, if applicable on prize winnings, are the responsibility of the recipient as per local law.

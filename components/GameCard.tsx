@@ -54,13 +54,6 @@ export default function GameCard({ game, index }: Props) {
           {game.subtitle}
         </p>
 
-        <div className="mb-6 flex items-start gap-2 text-[#ff4655]">
-          <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <p className="text-sm sm:text-base font-bold uppercase tracking-widest">{SITE.prizePool}</p>
-        </div>
-
         {game.id === "valorant" && (
           <div className="mb-6 border border-[#ff4655]/30 bg-[#ff4655]/5 p-4 rounded-sm flex items-start gap-3">
             <svg className="w-5 h-5 text-[#ff4655] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -85,7 +78,15 @@ export default function GameCard({ game, index }: Props) {
                   {mode.format}
                 </span>
               </div>
-              <p className="text-sm sm:text-base text-white/60">{mode.blurb}</p>
+              <p className="text-sm sm:text-base text-white/60 mb-3">{mode.blurb}</p>
+              {mode.prize && (
+                <div className="flex items-start gap-2 text-[#ff4655]">
+                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p className="text-xs sm:text-sm font-bold tracking-wide">{mode.prize}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
