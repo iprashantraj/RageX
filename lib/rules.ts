@@ -28,10 +28,8 @@ By registering, every player agrees and team coach to the rules below in full. T
 - Tekken 8 (per player): ₹229
 
 2.2 Entry fees are **non-refundable** once registration is confirmed, except in cases where the organizers cancel the event entirely.
-2.3 **Prize Pool:** Total prize pool of up to ₹11,000, distributed as:
-- Valorant 5v5: Up to 5k
-- Valorant 2v2: Up to 3k
-- Tekken 8: Up to 3k
+2.3 **Prize Pool:**
+Winner can win upto 5k followed by runner up
 
 2.4 Prize money will be transferred **same day** after the tournament concludes, Cash Prize will be provided by the admins.
 2.5 Taxes, if applicable on prize winnings, are the responsibility of the recipient as per local law.

@@ -44,6 +44,21 @@ export default function EventInfo() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={400}>
+          <div className="mt-8 border border-[#ff4655]/30 bg-[#ff4655]/5 p-5 sm:p-6 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#ff4655]/10 shrink-0">
+              <svg className="w-5 h-5 text-[#ff4655]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 className="text-[#ff4655] font-bold text-base sm:text-lg uppercase tracking-wider mb-1">Physical Attendance Required</h4>
+              <p className="text-white/70 text-sm sm:text-base">This is an offline LAN event. All participants must be physically present at the venue to compete.</p>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
