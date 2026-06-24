@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -16,6 +16,24 @@ export default function RulesModal({
   markdownContent,
 }: RulesModalProps) {
   const [hasAgreed, setHasAgreed] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+
+  // Reset scroll, checkbox, and focus when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setHasAgreed(false);
+      // Use requestAnimationFrame to ensure DOM is painted before scrolling/focusing
+      requestAnimationFrame(() => {
+        if (contentRef.current) {
+          contentRef.current.scrollTop = 0;
+        }
+        if (dialogRef.current) {
+          dialogRef.current.focus();
+        }
+      });
+    }
+  }, [isOpen]);
 
   // Lock body scroll when modal is open
   useEffect(() => {
@@ -43,7 +61,7 @@ export default function RulesModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
@@ -53,13 +71,16 @@ export default function RulesModal({
 
       {/* Modal Container */}
       <div
-        className="relative flex flex-col w-full max-w-3xl max-h-[90vh] bg-zinc-950 border border-white/10 rounded-xl shadow-2xl overflow-hidden shadow-[#ff4655]/10 animate-in fade-in zoom-in-95 duration-200"
+        ref={dialogRef}
+        tabIndex={-1}
+        style={{ maxHeight: "calc(100vh - 2rem)" }}
+        className="relative flex flex-col w-full max-w-3xl bg-zinc-950 border border-white/10 rounded-xl shadow-2xl shadow-[#ff4655]/10 animate-in fade-in zoom-in-95 duration-200 outline-none"
         role="dialog"
         aria-modal="true"
         aria-labelledby="rules-modal-title"
       >
         {/* Header */}
-        <div className="flex-shrink-0 p-6 border-b border-white/10 bg-zinc-900/50">
+        <div className="flex-shrink-0 p-6 border-b border-white/10 bg-zinc-900/50 rounded-t-xl">
           <h2 id="rules-modal-title" className="text-2xl sm:text-3xl font-black tracking-tight text-white mb-2">
             Rules & Regulations
           </h2>
@@ -69,7 +90,7 @@ export default function RulesModal({
         </div>
 
         {/* Content (Scrollable) */}
-        <div className="flex-1 overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
+        <div ref={contentRef} style={{ minHeight: 0 }} className="flex-1 overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
           <div className="prose prose-invert prose-red max-w-none text-white/80">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {markdownContent}
@@ -78,7 +99,7 @@ export default function RulesModal({
         </div>
 
         {/* Footer */}
-        <div className="flex-shrink-0 p-6 border-t border-white/10 bg-zinc-900/80">
+        <div className="flex-shrink-0 p-6 border-t border-white/10 bg-zinc-900/80 rounded-b-xl">
           <label className="flex items-start sm:items-center gap-3 cursor-pointer group mb-6">
             <div className="relative flex items-center justify-center mt-1 sm:mt-0">
               <input

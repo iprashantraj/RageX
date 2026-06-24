@@ -40,8 +40,8 @@ export default function Preloader() {
     };
 
     const interval = setInterval(() => {
-      // Custom organic increment
-      const increment = Math.floor(Math.random() * 8) + 4;
+      // Custom organic increment (slower for ~3s total duration)
+      const increment = Math.floor(Math.random() * 4) + 2;
       currentPercent = Math.min(100, currentPercent + increment);
       setPercent(currentPercent);
 
@@ -112,10 +112,10 @@ export default function Preloader() {
           setTimeout(() => {
             setIsVisible(false);
             document.body.style.overflow = "";
-          }, 800); // duration of fade transition
-        }, 800); // delay at 100% to view the final state
+          }, 700); // duration of fade transition
+        }, 500); // delay at 100% to view the final state
       }
-    }, 120);
+    }, 100);
 
     return () => {
       clearInterval(interval);

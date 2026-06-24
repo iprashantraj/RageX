@@ -128,11 +128,11 @@ Disqualification results in forfeiture of entry fee, prize eligibility, and remo
 ## 11. Agreement
 
 By submitting the registration form, I confirm that:
-- [ ] I have read and agree to all rules and regulations stated above.
-- [ ] All information provided by me is accurate and true.
-- [ ] I understand that entry fees are non-refundable except as stated in Section 10.
-- [ ] I agree to follow the Code of Conduct (Section 6) at all times during the event.
-- [ ] I consent to being recorded/photographed for streaming and promotional use (Section 8).
+- I have read and agree to all rules and regulations stated above.
+- All information provided by me is accurate and true.
+- I understand that entry fees are non-refundable except as stated in Section 10.
+- I agree to follow the Code of Conduct (Section 6) at all times during the event.
+- I consent to being recorded/photographed for streaming and promotional use (Section 8).
 
 **For queries, contact:** [ragesfankx@gmail.com/Instagram-@rageee__x]
 
