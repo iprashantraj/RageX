@@ -35,12 +35,14 @@ export default function Navbar() {
         </nav>
       </header>
 
-      <RulesModal
-        isOpen={isRulesModalOpen}
-        onClose={() => setIsRulesModalOpen(false)}
-        onAccept={handleAcceptRules}
-        markdownContent={TOURNAMENT_RULES_MARKDOWN}
-      />
+      {isRulesModalOpen && (
+        <RulesModal
+          isOpen={isRulesModalOpen}
+          onClose={() => setIsRulesModalOpen(false)}
+          onAccept={handleAcceptRules}
+          markdownContent={TOURNAMENT_RULES_MARKDOWN}
+        />
+      )}
     </>
   );
 }

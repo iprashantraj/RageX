@@ -7,6 +7,7 @@ export const SITE = {
   registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
   date: "5th July 2026",
   venue: "Hexa Gaming",
+  venueMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hexa+Gaming+Ranchi",
   prizePool: [
     "5v5: Winner can win upto 5k followed by runner up",
     "2v2: Winner can win upto 3k followed by runner up",

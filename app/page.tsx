@@ -13,7 +13,6 @@ const ticker = [
   "OFFLINE LAN",
   "VALORANT · 5v5 · 2v2",
   "TEKKEN · 1v1",
-  "BYOC",
   "REGISTER NOW",
 ];
 

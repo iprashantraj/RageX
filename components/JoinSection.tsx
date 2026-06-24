@@ -11,7 +11,7 @@ export default function JoinSection() {
       <div className="relative mx-auto max-w-4xl text-center">
         <Reveal>
           <p className="text-[10px] sm:text-xs font-mono uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[#ff4655] mb-4 sm:mb-6">
-            // 03 · Enlist
+            {"// 03 · Enlist"}
           </p>
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white leading-[0.9] mb-4 sm:mb-6">
             Ready to <span className="text-[#ff4655]">rage</span>?

@@ -17,10 +17,9 @@ export default function RulesModal({
 }: RulesModalProps) {
   const [hasAgreed, setHasAgreed] = useState(false);
 
-  // Reset agreement state when modal opens
+  // Lock body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
-      setHasAgreed(false);
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
