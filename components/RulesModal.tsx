@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -18,6 +19,12 @@ export default function RulesModal({
   const [hasAgreed, setHasAgreed] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure portal target exists (client-side only)
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Reset scroll, checkbox, and focus when modal opens
   useEffect(() => {
@@ -58,10 +65,10 @@ export default function RulesModal({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
-  return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6">
+  return createPortal(
+    <div className="fixed inset-0 z-[9998] flex items-center justify-center p-4 sm:p-6">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
@@ -73,8 +80,7 @@ export default function RulesModal({
       <div
         ref={dialogRef}
         tabIndex={-1}
-        style={{ maxHeight: "calc(100vh - 2rem)" }}
-        className="relative flex flex-col w-full max-w-3xl bg-zinc-950 border border-white/10 rounded-xl shadow-2xl shadow-[#ff4655]/10 animate-in fade-in zoom-in-95 duration-200 outline-none"
+        className="relative flex flex-col w-full max-w-3xl max-h-full bg-zinc-950 border border-white/10 rounded-xl shadow-2xl shadow-[#ff4655]/10 animate-in fade-in zoom-in-95 duration-200 outline-none overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="rules-modal-title"
@@ -152,6 +158,8 @@ export default function RulesModal({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
+

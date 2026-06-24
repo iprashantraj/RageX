@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   title: "RageX — Offline Gaming Showdown",
   description:
     "RageX: an offline LAN event featuring Valorant (5v5 & 2v2) and Tekken (1v1). Register now.",
+  icons: {
+    icon: "/ragex.png",
+    apple: "/ragex.png",
+  },
 };
 
 export default function RootLayout({
