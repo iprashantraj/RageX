@@ -8,7 +8,7 @@ export default function GamesSection() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="text-[10px] sm:text-xs font-mono uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[#ff4655] mb-3">
-            // 02 · The Games
+            // 01 · The Games
           </p>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-3 sm:mb-4">
             Two titles. One arena.

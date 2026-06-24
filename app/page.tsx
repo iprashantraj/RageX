@@ -25,10 +25,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Marquee items={ticker} />
-        <SectionDivider label="01 — Event Info" />
-        <EventInfo />
-        <SectionDivider label="02 — Battlegrounds" />
+        <SectionDivider label="01 — Battlegrounds" />
         <GamesSection />
+        <SectionDivider label="02 — Event Info" />
+        <EventInfo />
         <SectionDivider label="03 — Enlist" />
         <JoinSection />
       </main>

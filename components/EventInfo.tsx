@@ -13,7 +13,7 @@ export default function EventInfo() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="text-[10px] sm:text-xs font-mono uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[#ff4655] mb-3">
-            // 01 · The Event
+            // 02 · The Event
           </p>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-10 sm:mb-16">
             Mark your calendar.

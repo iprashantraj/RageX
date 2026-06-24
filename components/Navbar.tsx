@@ -9,8 +9,8 @@ export default function Navbar() {
           <img src="/ragex-resized.png" alt="RageX" className="h-8 sm:h-10 w-auto mix-blend-screen" />
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm text-white/70">
-          <a href="#event" className="hover:text-white transition">Event</a>
           <a href="#games" className="hover:text-white transition">Games</a>
+          <a href="#event" className="hover:text-white transition">Event</a>
           <a href="#join" className="hover:text-white transition">Join</a>
         </div>
         <a
