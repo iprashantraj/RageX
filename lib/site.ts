@@ -45,7 +45,7 @@ export const GAMES: Game[] = [
       {
         name: "5v5 Standard",
         format: "Best of 3 · Single Elim",
-        blurb: "Full team warfare. Plant, defuse, dominate.",
+        blurb: "Full team warfare. Plant, defuse, dominate. Swiftplay format — only the final is full length.",
         prize: "Winner can win upto 5k followed by runner up",
       },
       {
