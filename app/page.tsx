@@ -10,9 +10,8 @@ import SectionDivider from "@/components/SectionDivider";
 
 const ticker = [
   "RageX 2026",
-  "OFFLINE LAN",
+  "ONLINE TOURNAMENT",
   "VALORANT · 5v5 · 2v2",
-  "TEKKEN · 1v1",
   "REGISTER NOW",
 ];
 

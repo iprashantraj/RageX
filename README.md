@@ -4,16 +4,13 @@
 From LAN showdowns to online tournaments, RageX is where gamers compete, connect, and level up.
 
 ## 🏆 Current Event: RageX LAN Showdown
-- **Date:** 5th July 2026
-- **Venue:** Hexa Gaming
-- **Games:** 
+- **Format:** Online Tournament
+- **Games Featured:** 
   - **Valorant** (5v5 Standard & 2v2 Showdown)
-  - **Tekken 8** (1v1 Duel)
 
 ### 💰 Prize Pool
 - **Valorant 5v5:** Winner can win upto 5k followed by runner up
 - **Valorant 2v2:** Winner can win upto 3k followed by runner up
-- **Tekken 8:** Winner can win upto 3k followed by runner up
 
 ## 🛠 Tech Stack
 This project is built using modern web technologies:

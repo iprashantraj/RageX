@@ -21,7 +21,6 @@ export default function Preloader() {
       "WARMING UP REFLEX ENGINE... ACTIVE",
       "SYNCING MOUSE INLINE INPUT... 1000HZ",
       "MATCHMAKING SERVER CONNECTED [AP-SOUTH]",
-      "TEKKEN COMBAT ENGINE INITIALIZED",
       "LOADING VALORANT HAVEN MAP...",
       "TACTICAL SHIELD INJECTED",
       "TARGET IN SIGHT. PREPARE TO FIRE...",
@@ -156,7 +155,7 @@ export default function Preloader() {
       <div className="w-full max-w-5xl flex justify-between items-center text-[10px] text-white/40 border-b border-white/10 pb-4">
         <div className="flex items-center gap-2">
           <span className="h-2 w-2 bg-[#ff4655] animate-pulse rounded-full" />
-          <span>MATCH: RAGEX_LAN_ARENA_2026</span>
+          <span>MATCH: RAGEX_ONLINE_ARENA_2026</span>
         </div>
         <div className="tracking-widest animate-pulse flex items-center gap-3">
           <span>PING: 2MS</span>
@@ -268,7 +267,7 @@ export default function Preloader() {
 
         {/* Bottom Small Credits */}
         <div className="flex justify-between items-center text-[9px] text-white/30 tracking-widest pt-2 border-t border-white/5">
-          <span>LOBBY: AP_OFFLINE_LAN</span>
+          <span>LOBBY: AP_ONLINE_TOURNAMENT</span>
           <span>EST. TIME: ~2.0S</span>
         </div>
       </div>

@@ -20,9 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "RageX — Offline Gaming Showdown",
+  title: "RageX — Online Gaming Showdown",
   description:
-    "RageX: an offline LAN event featuring Valorant (5v5 & 2v2) and Tekken (1v1). Register now.",
+    "RageX: an online gaming event featuring Valorant (5v5 & 2v2). Register now.",
   icons: {
     icon: "/ragex.png",
     apple: "/ragex.png",

@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center pt-20 pb-24">
         <p className="mb-4 sm:mb-6 text-[10px] sm:text-sm font-mono uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[#ff4655] animate-pulse">
-          {"// Offline LAN Event"}
+          {"// Online Tournament"}
         </p>
         <div className="flex justify-center" style={{ isolation: "auto" }}>
           <img
