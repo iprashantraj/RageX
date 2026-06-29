@@ -113,5 +113,4 @@ By submitting the registration form, I confirm that:
 **For queries, contact:** [ragesfankx@gmail.com/Instagram-@rageee__x]
 
 ---
-\`;
-
+`;
