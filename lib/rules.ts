@@ -1,116 +1,77 @@
 export const TOURNAMENT_RULES_MARKDOWN = `
-# RageX — Official Rules & Regulations
+# Tournament Rules & Regulations
 
-**Games:** Valorant (PC, Team)
-**Format:** Online Tournament
-**Last Updated:** 29/06/2026
+## 1. Eligibility
+- Participants must be aged 14 or above.
+- Players must provide accurate full name, contact number, email, and in-game name (IGN). Fake or incomplete entries may be disqualified at the organizer's discretion.
+- Registration is confirmed only after successful payment of the entry fee.
 
-By registering, every player and team coach agrees to the rules below in full. Tournament admins reserve the right to make final decisions on any situation not explicitly covered here.
+## 2. Entry Fee & Prizes
 
----
+**Entry Fees**
 
-## 1. Eligibility & Registration
+| Format | Fee |
+|---|---|
+| Valorant 5v5 Swiftplay (finals played as full-length Competitive mode) | ₹495 / team |
+| Valorant 2v2 Skirmish | ₹248 / team |
+| Valorant 1v1 Skirmish | ₹144 / player |
 
-1.1 Registration is open to all players who complete the official Google Form and agree to these rules.
-1.2 Players must provide accurate, real information (name, contact number, email, in-game ID/IGN) at registration. Fake or incomplete entries may be disqualified without refund.
-1.3 Minimum age: **[14+ years]**. The organizers assume no liability for any confusion, misunderstandings, complaints, or allegations arising from parents/guardians.
-1.4 Each player may register for **only one team** in Valorant. Multi-registration (smurfing across teams) is not allowed.
-1.5 Registration is only confirmed once **payment is received** (see Section 2) and confirmation is sent by the organizers.
+- Entry fees are **non-refundable**, except in cases where the organizers cancel the event entirely (see Section 9).
+- A registration confirmation email will be sent **1 day after registration**.
 
----
+**Prize Pool**
 
-## 2. Entry Fee & Prize Pool
+| Format | 1st | 2nd | 3rd |
+|---|---|---|---|
+| Valorant 5v5 (Swiftplay) | ₹5,000 | ₹2,500 | ₹1,500 |
+| Valorant 2v2 (Skirmish) | ₹4,000 | ₹2,000 | ₹1,000 |
+| Valorant 1v1 (Skirmish) | ₹2,000 | ₹1,000 | ₹500 |
 
-2.1 **Entry Fee:**
-- Valorant 5v5 (per team): ₹1495
-- Valorant 2v2 Skirmish (per team): ₹398
+- Cash prizes will be paid out on the same day as the event.
+- Any applicable taxes on winnings are the sole responsibility of the winner.
 
-2.2 Entry fees are **non-refundable** once registration is confirmed, except in cases where the organizers cancel the event entirely.
-2.3 **Prize Pool:**
-- 5v5: Winner can win upto 5k followed by runner up
-- 2v2: Winner can win upto 3k followed by runner up
+## 3. Check-In
+- Players/teams must arrive **5 minutes before** their scheduled match time.
+- No-shows will be disqualified and will forfeit their entry fee.
+- No late entries will be accepted after the check-in deadline.
 
-2.4 Prize money will be transferred **same day** after the tournament concludes.
-2.5 Taxes, if applicable on prize winnings, are the responsibility of the recipient as per local law.
-2.6 Organizers reserve the right to adjust the prize pool if the minimum number of registrations is not met, with prior notice to participants.
+## 4. Match Rules
+- Valorant 5v5 finals will be played as a full-length match in Competitive mode.
+- All other matches follow an elimination format under standard Competitive ruleset.
+- Each team is allowed **1 pause per map**, to be used only for genuine technical issues.
+- A **5-minute grace period** is allowed for technical issues. If unresolved after this period, the match may be forfeited.
 
----
+## 5. Code of Conduct
+- **Zero tolerance** for cheating, match-fixing, or collusion — results in instant disqualification with no refund.
+- Harassment, hate speech, threats, or abusive behaviour of any kind will not be tolerated.
+- Unsportsmanlike conduct, including intentional game-throwing or stalling, is prohibited.
+- All admin instructions must be followed. **Admin decisions are final.**
 
-## 3. Check-In & Attendance
+## 6. Disqualification
+- Disqualification results in forfeiture of entry fee, prize eligibility, and possible removal from the venue.
+- Any case of malpractice may incur an additional **₹1,000 compensation charge** from the offending player/team.
 
-3.1 All players must check in online via the official Discord/WhatsApp group at least **15 minutes** before their scheduled match time.
-3.2 Teams/players who fail to check in by the deadline may be marked as a **no-show** and disqualified, forfeiting the match and entry fee.
+## 7. Media & Privacy
+- The event may be live-streamed and/or recorded. By participating, you consent to your name, IGN, and gameplay being used in promotional content.
+- Personal data collected is used solely for tournament management and will not be shared with third parties.
 
----
+## 8. Changes to Schedule/Format
+- The schedule or format may change due to unforeseen circumstances; participants will be notified in advance.
+- A full refund will be issued **only** if the event is cancelled in its entirety.
 
-## 4. Equipment & Setup
-
-4.1 Players are responsible for their own hardware, peripherals, and internet connection. Organizers are not liable for any technical issues on the player's end.
-4.2 No external software, scripts, macros, cheat engines, overlays, or unauthorized hardware modifications are allowed.
-
----
-
-## 5. Match Rules
-
-### 5.1 Valorant
-- Format: Every round is an elimination round.
-- Map pool and map selection/ban process: Will be mentioned on our page before tournament.
-- Agent select, side selection, and overtime rules follow standard official Valorant competitive rules unless stated otherwise.
-- Pause requests are limited to **[1 pause]** per team per map, for technical issues only.
-
-5.2 Match start times are firm. A grace period of **[5 minutes]** is given for technical issues only; beyond that, the match may be forfeited.
-5.3 Results must be reported to the admin immediately after each match with screenshots. Disputes must be raised immediately — results will not be reviewed after the next match has started.
-
----
-
-## 6. Code of Conduct
-
-6.1 **Zero tolerance** for cheating, hacking, exploiting bugs/glitches, match-fixing, or collusion between teams/players. Violators will be **immediately disqualified** with no refund and may be banned from future events.
-6.2 No toxic behavior: harassment, hate speech, discrimination, threats, or abusive language toward other players, staff, or spectators (verbal or written) will not be tolerated.
-6.3 No unsportsmanlike conduct, including intentional game-throwing, stalling, or disrespecting opponents.
-6.4 Players must follow all instructions given by tournament admins/referees during the event. Admin decisions on rule violations are final.
-6.5 Any form of betting, bribery, or attempts to influence match outcomes outside of fair play is strictly prohibited.
-
----
-
-## 7. Disqualification & Penalties
-
-A player or team may be disqualified, forfeited, or penalized for:
-- Failure to check in or show up on time
-- Cheating, hacking, or use of unauthorized software/hardware
-- Verified collusion or match-fixing
-- Abusive, threatening, or discriminatory behavior
-- Repeated rule violations after a warning
-Involvement in any malpractices results in Compensation of ₹1000.
-
-Disqualification results in forfeiture of entry fee and prize eligibility. Organizer decisions are final and binding.
-
----
-
-## 8. Streaming, Media & Privacy
-
-8.1 The tournament may be live-streamed, recorded, and broadcasted. By participating, players consent to their gameplay, name/IGN, and likeness being used in event broadcasts, social media, and promotional material.
-8.2 Personal information collected at registration (name, email, phone number, payment details) will only be used for tournament management and will not be shared with third parties, in accordance with applicable data protection norms.
-
----
-
-## 9. Force Majeure & Changes
-
-9.1 Organizers reserve the right to modify the schedule, format, or rules due to circumstances beyond their control, with participants notified as soon as possible.
-9.2 In case of event cancellation due to force majeure, refund policy will be: full refund.
-
----
-
-## 10. Agreement
-
+## 9. Agreement
 By submitting the registration form, I confirm that:
-- I have read and agree to all rules and regulations stated above.
-- All information provided by me is accurate and true.
-- I understand that entry fees are non-refundable except as stated in Section 9.
-- I agree to follow the Code of Conduct (Section 6) at all times during the event.
-- I consent to being recorded for streaming and promotional use (Section 8).
-
-**For queries, contact:** [ragesfankx@gmail.com/Instagram-@rageee__x]
+1. I have read and agree to all rules and regulations stated above.
+2. All information provided by me is accurate and true.
+3. I understand that entry fees are non-refundable, except as stated in Section 8.
+4. I agree to follow the Code of Conduct (Section 5) at all times during the event.
+5. I consent to being recorded for streaming and promotional use (Section 7).
 
 ---
+
+**Queries / Contact:**
+📧 ragesfankx@gmail.com
+📷 Instagram: @rageee__x
+
+*By registering, you agree to all rules above. Organizer decisions are final and binding.*
 `;
