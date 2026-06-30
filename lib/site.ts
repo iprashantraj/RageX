@@ -11,6 +11,35 @@ export const SITE = {
     "Valorant 2v2 (Skirmish) — 1st: ₹4000 · 2nd: ₹2000 · 3rd: ₹1000",
     "Valorant 1v1 (Skirmish) — 1st: ₹2000 · 2nd: ₹1000 · 3rd: ₹500",
   ],
+  prizeBreakdown: [
+    {
+      mode: "5v5 Swiftplay",
+      total: "₹9,000",
+      positions: [
+        { place: "1st", amount: "₹5,000" },
+        { place: "2nd", amount: "₹2,500" },
+        { place: "3rd", amount: "₹1,500" },
+      ],
+    },
+    {
+      mode: "2v2 Skirmish",
+      total: "₹7,000",
+      positions: [
+        { place: "1st", amount: "₹4,000" },
+        { place: "2nd", amount: "₹2,000" },
+        { place: "3rd", amount: "₹1,000" },
+      ],
+    },
+    {
+      mode: "1v1 Skirmish",
+      total: "₹3,500",
+      positions: [
+        { place: "1st", amount: "₹2,000" },
+        { place: "2nd", amount: "₹1,000" },
+        { place: "3rd", amount: "₹500" },
+      ],
+    },
+  ],
 };
 
 export type GameMode = {
