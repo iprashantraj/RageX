@@ -11,7 +11,7 @@ export default function GamesSection() {
             {"// 01 · The Games"}
           </p>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-3 sm:mb-4">
-            Two titles. One arena.
+            RageX Knockout Arena.
           </h2>
           <p className="text-sm sm:text-base text-white/50 max-w-xl mb-12 sm:mb-20">
             Pick your weapon. Compete across multiple formats designed to test

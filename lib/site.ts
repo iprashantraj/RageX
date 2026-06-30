@@ -7,8 +7,9 @@ export const SITE = {
   registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
   date: "19-20 July 2026",
   prizePool: [
-    "5v5: Winner can win upto 5k followed by runner up",
-    "2v2: Winner can win upto 3k followed by runner up"
+    "Valorant 5v5 (Swiftplay) — 1st: ₹5000 · 2nd: ₹2500 · 3rd: ₹1500",
+    "Valorant 2v2 (Skirmish) — 1st: ₹4000 · 2nd: ₹2000 · 3rd: ₹1000",
+    "Valorant 1v1 (Skirmish) — 1st: ₹2000 · 2nd: ₹1000 · 3rd: ₹500",
   ],
 };
 
@@ -16,7 +17,7 @@ export type GameMode = {
   name: string;
   format: string;
   blurb: string;
-  prize?: string;
+  entry?: string;
 };
 
 export type Game = {
@@ -34,22 +35,28 @@ export const GAMES: Game[] = [
   {
     id: "valorant",
     title: "VALORANT",
-    subtitle: "Tactical 5v5 / 2v2",
+    subtitle: "Tactical 5v5 / 2v2 / 1v1",
     accent: "from-[#ff4655] to-[#bd3944]",
     glow: "shadow-[0_0_80px_-10px_rgba(255,70,85,0.6)]",
     image: "/valo.jpeg",
     modes: [
       {
-        name: "5v5 Standard",
+        name: "5v5 Swiftplay",
         format: "Best of 3 · Single Elim",
-        blurb: "Full team warfare. Plant, defuse, dominate. Swiftplay format — only the final is full length.",
-        prize: "Winner can win upto 5k followed by runner up",
+        blurb: "Full team warfare. Plant, defuse, dominate. Swiftplay format — final is a full-length competitive match.",
+        entry: "₹495 / team",
       },
       {
-        name: "2v2 Showdown",
+        name: "2v2 Skirmish",
         format: "Best of 5 · Round Robin",
         blurb: "Two players. One map. Pure aim.",
-        prize: "Winner can win upto 3k followed by runner up",
+        entry: "₹248 / team",
+      },
+      {
+        name: "1v1 Skirmish",
+        format: "Best of 3 · Single Elim",
+        blurb: "Solo duel. No teammates, no excuses.",
+        entry: "₹144 / player",
       },
     ],
   },
