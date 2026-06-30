@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
 import GrainOverlay from "@/components/GrainOverlay";
 import SectionDivider from "@/components/SectionDivider";
+import CountdownBadge from "@/components/CountdownBadge";
 
 const ticker = [
   "RageX 2026",
@@ -31,6 +32,7 @@ export default function Home() {
         <JoinSection />
       </main>
       <Footer />
+      <CountdownBadge />
     </div>
   );
 }
