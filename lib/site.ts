@@ -5,7 +5,7 @@ export const SITE = {
     "RageX is where gamers compete, connect, and level up in competitive online tournaments.",
   instagramUrl: "https://www.instagram.com/rageee__x/",
   registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4d26ngNuwQJeWyGOfwiM-QeDyPmyry4r-RbDT7bDYI82OKg/viewform?usp=dialog",
-  date: "19-20 July 2026",
+  date: "18-19 July 2026",
   prizePool: [
     "Valorant 5v5 (Swiftplay) — 1st: ₹5000 · 2nd: ₹2500 · 3rd: ₹1500",
     "Valorant 2v2 (Skirmish) — 1st: ₹4000 · 2nd: ₹2000 · 3rd: ₹1000",
