@@ -24,6 +24,16 @@ export default function CTAButtons() {
           Register Now
         </button>
         <a
+          href="#event"
+          className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white border border-white/30 hover:border-[#ff4655] hover:bg-[#ff4655]/5 hover:text-[#ff4655] transition"
+        >
+          <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-current" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <path d="M16 2v4M8 2v4M3 10h18" />
+          </svg>
+          Mark Your Calendar
+        </a>
+        <a
           href={SITE.instagramUrl}
           target="_blank"
           rel="noreferrer"
