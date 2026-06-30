@@ -43,18 +43,48 @@ export default function EventInfo() {
 
         {/* Date strip */}
         <Reveal>
-          <div className="mb-12 sm:mb-16 border border-white/10 bg-black p-6 sm:p-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 group hover:border-white/30 transition-colors">
-            <div>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-white/40 mb-2">
-                Date
-              </p>
-              <p className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
-                {SITE.date}
-              </p>
+          <div className="mb-12 sm:mb-16 relative border border-white/10 bg-black overflow-hidden group hover:border-[#ff4655]/40 transition-colors">
+            {/* scanning beam */}
+            <div className="absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-[#ff4655]/10 to-transparent animate-[sweep_5s_linear_infinite] pointer-events-none" />
+            {/* corner ticks */}
+            <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#ff4655]" />
+            <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#ff4655]" />
+            <span className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#ff4655]" />
+            <span className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#ff4655]" />
+
+            <div className="relative p-6 sm:p-10 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
+              {/* Massive split-date block */}
+              <div className="flex items-stretch gap-2 sm:gap-4">
+                <div className="flex flex-col items-center justify-center px-4 sm:px-6 py-3 border border-white/15 group-hover:border-[#ff4655]/50 transition-colors">
+                  <span className="text-[9px] font-mono uppercase tracking-[0.3em] text-[#ff4655] mb-1">Day 01</span>
+                  <span className="text-5xl sm:text-7xl md:text-8xl font-black text-white leading-none tracking-tighter">18</span>
+                </div>
+                <div className="flex items-center text-3xl sm:text-5xl font-black text-white/20">/</div>
+                <div className="flex flex-col items-center justify-center px-4 sm:px-6 py-3 border border-white/15 group-hover:border-[#ff4655]/50 transition-colors">
+                  <span className="text-[9px] font-mono uppercase tracking-[0.3em] text-[#ff4655] mb-1">Day 02</span>
+                  <span className="text-5xl sm:text-7xl md:text-8xl font-black text-white leading-none tracking-tighter">19</span>
+                </div>
+                <div className="hidden sm:flex flex-col justify-center pl-3 sm:pl-5 border-l border-white/10">
+                  <span className="text-lg sm:text-2xl font-black text-white leading-tight tracking-wide">JULY</span>
+                  <span className="text-lg sm:text-2xl font-black text-[#ff4655] leading-tight tracking-wide">2026</span>
+                </div>
+              </div>
+
+              {/* Right column */}
+              <div className="md:text-right space-y-3">
+                <p className="text-[10px] sm:text-xs uppercase tracking-[0.4em] text-white/40 sm:hidden">JULY 2026</p>
+                <div className="inline-flex items-center gap-2 border border-[#ff4655]/40 px-3 py-1.5 text-[10px] sm:text-xs font-mono uppercase tracking-[0.25em] text-[#ff4655]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#ff4655] animate-pulse" />
+                  Registrations Live
+                </div>
+                <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.3em] text-white/60">
+                  Online · Two days · One champion
+                </p>
+                <p className="text-xs sm:text-sm text-white/40 max-w-sm md:ml-auto">
+                  Two days of pure aim. Group stages, brackets, and a full-length grand final.
+                </p>
+              </div>
             </div>
-            <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.3em] text-[#ff4655] opacity-80 group-hover:opacity-100 transition">
-              Online · Two days · One champion
-            </p>
           </div>
         </Reveal>
 
